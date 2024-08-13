@@ -1,124 +1,107 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Azienda di Sviluppo Expert Advisor</title>
+    <title>EA Builder Pro</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        function changeLanguage() {
-            var language = document.getElementById("languageSelect").value;
-            var content = {
-                "it": {
-                    "title": "Chi Siamo",
-                    "description": "Sviluppiamo, testiamo e vendiamo Expert Advisor dotati di intelligenza artificiale, in grado di generare profitti costanti sui mercati finanziari.",
-                    "development": "Lo Sviluppo",
-                    "developmentText": "Utilizziamo le più recenti tecnologie di intelligenza artificiale per sviluppare sistemi di trading avanzati che possono essere automatizzati e ottimizzati per vari mercati finanziari.",
-                    "data": "Dati",
-                    "dataText": "I nostri Expert Advisor sono testati rigorosamente su dati storici e in ambienti di trading simulati per garantire la massima efficienza e affidabilità.",
-                    "purchase": "Acquista",
-                    "purchaseText": "Puoi acquistare i nostri Expert Advisor visitando il nostro sito dedicato:"
-                },
-                "en": {
-                    "title": "Who We Are",
-                    "description": "We develop, test, and sell Expert Advisors equipped with artificial intelligence, capable of generating consistent profits in financial markets.",
-                    "development": "Development",
-                    "developmentText": "We use the latest AI technologies to develop advanced trading systems that can be automated and optimized for various financial markets.",
-                    "data": "Data",
-                    "dataText": "Our Expert Advisors are rigorously tested on historical data and in simulated trading environments to ensure maximum efficiency and reliability.",
-                    "purchase": "Purchase",
-                    "purchaseText": "You can purchase our Expert Advisors by visiting our dedicated site:"
-                },
-                "de": {
-                    "title": "Wer Wir Sind",
-                    "description": "Wir entwickeln, testen und verkaufen Expert Advisors mit künstlicher Intelligenz, die in der Lage sind, konstante Gewinne auf den Finanzmärkten zu erzielen.",
-                    "development": "Entwicklung",
-                    "developmentText": "Wir nutzen die neuesten KI-Technologien, um fortschrittliche Handelssysteme zu entwickeln, die für verschiedene Finanzmärkte automatisiert und optimiert werden können.",
-                    "data": "Daten",
-                    "dataText": "Unsere Expert Advisors werden rigoros auf historischen Daten und in simulierten Handelsumgebungen getestet, um maximale Effizienz und Zuverlässigkeit zu gewährleisten.",
-                    "purchase": "Kaufen",
-                    "purchaseText": "Sie können unsere Expert Advisors kaufen, indem Sie unsere dedizierte Website besuchen:"
-                },
-                "es": {
-                    "title": "Quiénes Somos",
-                    "description": "Desarrollamos, probamos y vendemos Expert Advisors equipados con inteligencia artificial, capaces de generar beneficios constantes en los mercados financieros.",
-                    "development": "Desarrollo",
-                    "developmentText": "Utilizamos las últimas tecnologías de IA para desarrollar sistemas de trading avanzados que pueden automatizarse y optimizarse para varios mercados financieros.",
-                    "data": "Datos",
-                    "dataText": "Nuestros Expert Advisors son rigurosamente probados en datos históricos y en entornos de trading simulados para garantizar la máxima eficiencia y fiabilidad.",
-                    "purchase": "Comprar",
-                    "purchaseText": "Puede comprar nuestros Expert Advisors visitando nuestro sitio dedicado:"
-                },
-                "zh": {
-                    "title": "我们是谁",
-                    "description": "我们开发、测试和销售配备人工智能的专家顾问，能够在金融市场上产生稳定的利润。",
-                    "development": "开发",
-                    "developmentText": "我们使用最新的人工智能技术来开发先进的交易系统，这些系统可以自动化并针对各种金融市场进行优化。",
-                    "data": "数据",
-                    "dataText": "我们的专家顾问经过严格的历史数据测试，并在模拟的交易环境中测试，以确保最大限度的效率和可靠性。",
-                    "purchase": "购买",
-                    "purchaseText": "您可以通过访问我们专用的网站购买我们的专家顾问："
-                }
-            };
-            document.getElementById("title").textContent = content[language].title;
-            document.getElementById("description").textContent = content[language].description;
-            document.getElementById("development").textContent = content[language].development;
-            document.getElementById("developmentText").textContent = content[language].developmentText;
-            document.getElementById("data").textContent = content[language].data;
-            document.getElementById("dataText").textContent = content[language].dataText;
-            document.getElementById("purchase").textContent = content[language].purchase;
-            document.getElementById("purchaseText").textContent = content[language].purchaseText;
-        }
-    </script>
 </head>
-<body onload="changeLanguage()">
+<body>
 
 <header>
-    <h1>Azienda di Sviluppo Expert Advisor</h1>
+    <div class="container">
+        <h1>EA Builder Pro</h1>
+        <nav>
+            <ul>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#support">Support</a></li>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="#hire">Hire Programmer</a></li>
+                <li><a href="https://www.mql5.com/it/users/francescolippo" class="cta">Get Started</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-<nav>
-    <ul>
-        <li><a href="#chi-siamo" id="title">Chi Siamo</a></li>
-        <li><a href="#lo-sviluppo" id="development">Lo Sviluppo</a></li>
-        <li><a href="#dati" id="data">Dati</a></li>
-        <li><a href="#acquista" id="purchase">Acquista</a></li>
-        <li><a href="https://www.mql5.com/it/users/francescolippo" target="_blank">Acquista su MQL5</a></li>
-    </ul>
-    <select id="languageSelect" onchange="changeLanguage()">
-        <option value="it">Italiano</option>
-        <option value="en">Inglese</option>
-        <option value="de">Tedesco</option>
-        <option value="es">Spagnolo</option>
-        <option value="zh">Cinese</option>
-    </select>
-</nav>
+<section id="hero">
+    <div class="container">
+        <h2>Build your EA <span>Without Coding!</span></h2>
+        <p>Generate any Expert Advisor for MetaTrader 4 & MetaTrader 5</p>
+        <p>EA Builder Pro is the ultimate tool for creating EA's without having to write a single line of code.</p>
+        <a href="https://www.mql5.com/it/users/francescolippo" class="cta">Get Started</a>
+    </div>
+</section>
 
-<main>
-    <section id="chi-siamo">
-        <h2 id="title">Chi Siamo</h2>
-        <p id="description">Sviluppiamo, testiamo e vendiamo Expert Advisor dotati di intelligenza artificiale, in grado di generare profitti costanti sui mercati finanziari.</p>
-    </section>
+<section id="statistics">
+    <div class="container">
+        <h2>Statistics</h2>
+        <div class="stats">
+            <div class="stat-item">
+                <h3>50,000+</h3>
+                <p>Users</p>
+            </div>
+            <div class="stat-item">
+                <h3>2m+</h3>
+                <p>Backtests</p>
+            </div>
+            <div class="stat-item">
+                <h3>160k+</h3>
+                <p>Expert Advisors</p>
+            </div>
+            <div class="stat-item">
+                <h3>2m+</h3>
+                <p>Exports</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section id="lo-sviluppo">
-        <h2 id="development">Lo Sviluppo</h2>
-        <p id="developmentText">Utilizziamo le più recenti tecnologie di intelligenza artificiale per sviluppare sistemi di trading avanzati che possono essere automatizzati e ottimizzati per vari mercati finanziari.</p>
-    </section>
+<section id="steps">
+    <div class="container">
+        <div class="step">
+            <h3><span>1</span> Get Started: Templates</h3>
+            <p>Quick-start your EA creation by selecting one of our templates and have a working EA immediately.</p>
+        </div>
+        <div class="step">
+            <h3><span>2</span> Add your Indicators</h3>
+            <p>Add standard MetaTrader indicators or search for an indicator in our Web Library.</p>
+        </div>
+        <div class="step">
+            <h3><span>3</span> Configure your Money Manager</h3>
+            <p>Set up your risk management and money management settings to optimize your trading strategy.</p>
+        </div>
+        <div class="step">
+            <h3><span>4</span> Strategy Modules</h3>
+            <p>Use strategy modules to manage your open orders, Stop loss and Take Profit values.</p>
+        </div>
+    </div>
+</section>
 
-    <section id="dati">
-        <h2 id="data">Dati</h2>
-        <p id="dataText">I nostri Expert Advisor sono testati rigorosamente su dati storici e in ambienti di trading simulati per garantire la massima efficienza e affidabilità.</p>
-    </section>
-
-    <section id="acquista">
-        <h2 id="purchase">Acquista</h2>
-        <p id="purchaseText">Puoi acquistare i nostri Expert Advisor visitando il nostro sito dedicato:</p>
-        <p><a href="https://www.mql5.com/it/users/francescolippo" target="_blank">Acquista qui</a></p>
-    </section>
-</main>
+<section id="features">
+    <div class="container">
+        <div class="feature">
+            <h3>No coding required</h3>
+            <p>You no longer need to write a single line of code or spend a lot of money on hiring a programmer.</p>
+        </div>
+        <div class="feature">
+            <h3>All-in-one Solution</h3>
+            <p>EA Builder Pro has all features to create almost any of your complex custom trading strategies.</p>
+        </div>
+        <div class="feature">
+            <h3>Cloud backtesting</h3>
+            <p>Backtest your strategies with a single click from the comfort of your sofa.</p>
+        </div>
+        <div class="feature">
+            <h3>Export to MetaTrader 4 & 5</h3>
+            <p>When you think you are ready to run your strategy, export your strategy for MT4 or MT5.</p>
+        </div>
+    </div>
+</section>
 
 <footer>
-    <p>&copy; 2024 Il Tuo Nome o Nome Azienda. Tutti i diritti riservati.</p>
+    <div class="container">
+        <p>&copy; 2024 EA Builder Pro. All rights reserved.</p>
+    </div>
 </footer>
 
 </body>
