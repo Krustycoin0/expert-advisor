@@ -5,8 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Azienda di Sviluppo Expert Advisor</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function changeLanguage() {
+            var language = document.getElementById("languageSelect").value;
+            var content = {
+                "it": {
+                    "title": "Chi Siamo",
+                    "description": "Sviluppiamo, testiamo e vendiamo Expert Advisor dotati di intelligenza artificiale, in grado di generare profitti costanti sui mercati finanziari.",
+                    "development": "Lo Sviluppo",
+                    "developmentText": "Utilizziamo le più recenti tecnologie di intelligenza artificiale per sviluppare sistemi di trading avanzati che possono essere automatizzati e ottimizzati per vari mercati finanziari.",
+                    "data": "Dati",
+                    "dataText": "I nostri Expert Advisor sono testati rigorosamente su dati storici e in ambienti di trading simulati per garantire la massima efficienza e affidabilità.",
+                    "purchase": "Acquista",
+                    "purchaseText": "Puoi acquistare i nostri Expert Advisor visitando il nostro sito dedicato:"
+                },
+                "en": {
+                    "title": "Who We Are",
+                    "description": "We develop, test, and sell Expert Advisors equipped with artificial intelligence, capable of generating consistent profits in financial markets.",
+                    "development": "Development",
+                    "developmentText": "We use the latest AI technologies to develop advanced trading systems that can be automated and optimized for various financial markets.",
+                    "data": "Data",
+                    "dataText": "Our Expert Advisors are rigorously tested on historical data and in simulated trading environments to ensure maximum efficiency and reliability.",
+                    "purchase": "Purchase",
+                    "purchaseText": "You can purchase our Expert Advisors by visiting our dedicated site:"
+                },
+                "de": {
+                    "title": "Wer Wir Sind",
+                    "description": "Wir entwickeln, testen und verkaufen Expert Advisors mit künstlicher Intelligenz, die in der Lage sind, konstante Gewinne auf den Finanzmärkten zu erzielen.",
+                    "development": "Entwicklung",
+                    "developmentText": "Wir nutzen die neuesten KI-Technologien, um fortschrittliche Handelssysteme zu entwickeln, die für verschiedene Finanzmärkte automatisiert und optimiert werden können.",
+                    "data": "Daten",
+                    "dataText": "Unsere Expert Advisors werden rigoros auf historischen Daten und in simulierten Handelsumgebungen getestet, um maximale Effizienz und Zuverlässigkeit zu gewährleisten.",
+                    "purchase": "Kaufen",
+                    "purchaseText": "Sie können unsere Expert Advisors kaufen, indem Sie unsere dedizierte Website besuchen:"
+                },
+                "es": {
+                    "title": "Quiénes Somos",
+                    "description": "Desarrollamos, probamos y vendemos Expert Advisors equipados con inteligencia artificial, capaces de generar beneficios constantes en los mercados financieros.",
+                    "development": "Desarrollo",
+                    "developmentText": "Utilizamos las últimas tecnologías de IA para desarrollar sistemas de trading avanzados que pueden automatizarse y optimizarse para varios mercados financieros.",
+                    "data": "Datos",
+                    "dataText": "Nuestros Expert Advisors son rigurosamente probados en datos históricos y en entornos de trading simulados para garantizar la máxima eficiencia y fiabilidad.",
+                    "purchase": "Comprar",
+                    "purchaseText": "Puede comprar nuestros Expert Advisors visitando nuestro sitio dedicado:"
+                },
+                "zh": {
+                    "title": "我们是谁",
+                    "description": "我们开发、测试和销售配备人工智能的专家顾问，能够在金融市场上产生稳定的利润。",
+                    "development": "开发",
+                    "developmentText": "我们使用最新的人工智能技术来开发先进的交易系统，这些系统可以自动化并针对各种金融市场进行优化。",
+                    "data": "数据",
+                    "dataText": "我们的专家顾问经过严格的历史数据测试，并在模拟的交易环境中测试，以确保最大限度的效率和可靠性。",
+                    "purchase": "购买",
+                    "purchaseText": "您可以通过访问我们专用的网站购买我们的专家顾问："
+                }
+            };
+            document.getElementById("title").textContent = content[language].title;
+            document.getElementById("description").textContent = content[language].description;
+            document.getElementById("development").textContent = content[language].development;
+            document.getElementById("developmentText").textContent = content[language].developmentText;
+            document.getElementById("data").textContent = content[language].data;
+            document.getElementById("dataText").textContent = content[language].dataText;
+            document.getElementById("purchase").textContent = content[language].purchase;
+            document.getElementById("purchaseText").textContent = content[language].purchaseText;
+        }
+    </script>
 </head>
-<body>
+<body onload="changeLanguage()">
 
 <header>
     <h1>Azienda di Sviluppo Expert Advisor</h1>
@@ -14,10 +79,10 @@
 
 <nav>
     <ul>
-        <li><a href="#chi-siamo">Chi Siamo</a></li>
-        <li><a href="#lo-sviluppo">Lo Sviluppo</a></li>
-        <li><a href="#dati">Dati</a></li>
-        <li><a href="#acquista">Acquista</a></li>
+        <li><a href="#chi-siamo" id="title">Chi Siamo</a></li>
+        <li><a href="#lo-sviluppo" id="development">Lo Sviluppo</a></li>
+        <li><a href="#dati" id="data">Dati</a></li>
+        <li><a href="#acquista" id="purchase">Acquista</a></li>
         <li><a href="https://www.mql5.com/it/users/francescolippo" target="_blank">Acquista su MQL5</a></li>
     </ul>
     <select id="languageSelect" onchange="changeLanguage()">
@@ -31,23 +96,23 @@
 
 <main>
     <section id="chi-siamo">
-        <h2>Chi Siamo</h2>
+        <h2 id="title">Chi Siamo</h2>
         <p id="description">Sviluppiamo, testiamo e vendiamo Expert Advisor dotati di intelligenza artificiale, in grado di generare profitti costanti sui mercati finanziari.</p>
     </section>
 
     <section id="lo-sviluppo">
-        <h2>Lo Sviluppo</h2>
-        <p>Utilizziamo le più recenti tecnologie di intelligenza artificiale per sviluppare sistemi di trading avanzati che possono essere automatizzati e ottimizzati per vari mercati finanziari.</p>
+        <h2 id="development">Lo Sviluppo</h2>
+        <p id="developmentText">Utilizziamo le più recenti tecnologie di intelligenza artificiale per sviluppare sistemi di trading avanzati che possono essere automatizzati e ottimizzati per vari mercati finanziari.</p>
     </section>
 
     <section id="dati">
-        <h2>Dati</h2>
-        <p>I nostri Expert Advisor sono testati rigorosamente su dati storici e in ambienti di trading simulati per garantire la massima efficienza e affidabilità.</p>
+        <h2 id="data">Dati</h2>
+        <p id="dataText">I nostri Expert Advisor sono testati rigorosamente su dati storici e in ambienti di trading simulati per garantire la massima efficienza e affidabilità.</p>
     </section>
 
     <section id="acquista">
-        <h2>Acquista</h2>
-        <p>Puoi acquistare i nostri Expert Advisor visitando il nostro sito dedicato:</p>
+        <h2 id="purchase">Acquista</h2>
+        <p id="purchaseText">Puoi acquistare i nostri Expert Advisor visitando il nostro sito dedicato:</p>
         <p><a href="https://www.mql5.com/it/users/francescolippo" target="_blank">Acquista qui</a></p>
     </section>
 </main>
