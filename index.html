@@ -5,8 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EA Builder Pro</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function changeLanguage() {
+            var language = document.getElementById("languageSelect").value;
+            var content = {
+                "en": {
+                    "heroTitle": "Build your EA <span class='highlight'>Without Coding!</span>",
+                    "heroDesc1": "Generate any Expert Advisor for MetaTrader 4 & MetaTrader 5",
+                    "heroDesc2": "EA Builder Pro is the ultimate tool for creating EA's without having to write a single line of code.",
+                    "getStarted": "Get Started",
+                    "statsTitle": "Statistics",
+                    "templatesTitle": "Get Started: Templates",
+                    "indicatorsTitle": "Add your Indicators",
+                    "moneyManagerTitle": "Configure your Money Manager",
+                    "strategyModulesTitle": "Strategy Modules",
+                    "noCodingTitle": "No coding required",
+                    "allInOneTitle": "All-in-one Solution",
+                    "cloudBacktestingTitle": "Cloud backtesting"
+                },
+                "it": {
+                    "heroTitle": "Costruisci il tuo EA <span class='highlight'>Senza Codice!</span>",
+                    "heroDesc1": "Genera qualsiasi Expert Advisor per MetaTrader 4 e MetaTrader 5",
+                    "heroDesc2": "EA Builder Pro è lo strumento definitivo per creare EA senza dover scrivere una singola riga di codice.",
+                    "getStarted": "Inizia",
+                    "statsTitle": "Statistiche",
+                    "templatesTitle": "Inizia: Modelli",
+                    "indicatorsTitle": "Aggiungi i tuoi Indicatori",
+                    "moneyManagerTitle": "Configura il tuo Gestore di Denaro",
+                    "strategyModulesTitle": "Moduli Strategici",
+                    "noCodingTitle": "Nessuna codifica richiesta",
+                    "allInOneTitle": "Soluzione Completa",
+                    "cloudBacktestingTitle": "Backtesting Cloud"
+                },
+                "zh": {
+                    "heroTitle": "创建您的EA <span class='highlight'>无需编码！</span>",
+                    "heroDesc1": "生成任何适用于MetaTrader 4和MetaTrader 5的专家顾问",
+                    "heroDesc2": "EA Builder Pro是创建EA的终极工具，无需编写一行代码。",
+                    "getStarted": "开始",
+                    "statsTitle": "统计",
+                    "templatesTitle": "开始：模板",
+                    "indicatorsTitle": "添加您的指标",
+                    "moneyManagerTitle": "配置您的资金管理器",
+                    "strategyModulesTitle": "策略模块",
+                    "noCodingTitle": "无需编码",
+                    "allInOneTitle": "一体化解决方案",
+                    "cloudBacktestingTitle": "云回测"
+                },
+                "es": {
+                    "heroTitle": "Crea tu EA <span class='highlight'>¡Sin Programar!</span>",
+                    "heroDesc1": "Genera cualquier Asesor Experto para MetaTrader 4 y MetaTrader 5",
+                    "heroDesc2": "EA Builder Pro es la herramienta definitiva para crear EA sin tener que escribir una sola línea de código.",
+                    "getStarted": "Empezar",
+                    "statsTitle": "Estadísticas",
+                    "templatesTitle": "Comenzar: Plantillas",
+                    "indicatorsTitle": "Añade tus Indicadores",
+                    "moneyManagerTitle": "Configura tu Administrador de Dinero",
+                    "strategyModulesTitle": "Módulos de Estrategia",
+                    "noCodingTitle": "No se requiere codificación",
+                    "allInOneTitle": "Solución Todo en Uno",
+                    "cloudBacktestingTitle": "Pruebas en la Nube"
+                },
+                "de": {
+                    "heroTitle": "Erstellen Sie Ihren EA <span class='highlight'>Ohne Programmierung!</span>",
+                    "heroDesc1": "Erstellen Sie jeden Expert Advisor für MetaTrader 4 und MetaTrader 5",
+                    "heroDesc2": "EA Builder Pro ist das ultimative Tool zum Erstellen von EAs, ohne eine einzige Zeile Code schreiben zu müssen.",
+                    "getStarted": "Jetzt loslegen",
+                    "statsTitle": "Statistiken",
+                    "templatesTitle": "Loslegen: Vorlagen",
+                    "indicatorsTitle": "Fügen Sie Ihre Indikatoren hinzu",
+                    "moneyManagerTitle": "Konfigurieren Sie Ihren Geldmanager",
+                    "strategyModulesTitle": "Strategie-Module",
+                    "noCodingTitle": "Keine Programmierung erforderlich",
+                    "allInOneTitle": "All-in-One-Lösung",
+                    "cloudBacktestingTitle": "Cloud-Backtesting"
+                }
+            };
+
+            document.getElementById("heroTitle").innerHTML = content[language].heroTitle;
+            document.getElementById("heroDesc1").textContent = content[language].heroDesc1;
+            document.getElementById("heroDesc2").textContent = content[language].heroDesc2;
+            document.getElementById("getStarted").textContent = content[language].getStarted;
+            document.getElementById("statsTitle").textContent = content[language].statsTitle;
+            document.getElementById("templatesTitle").textContent = content[language].templatesTitle;
+            document.getElementById("indicatorsTitle").textContent = content[language].indicatorsTitle;
+            document.getElementById("moneyManagerTitle").textContent = content[language].moneyManagerTitle;
+            document.getElementById("strategyModulesTitle").textContent = content[language].strategyModulesTitle;
+            document.getElementById("noCodingTitle").textContent = content[language].noCodingTitle;
+            document.getElementById("allInOneTitle").textContent = content[language].allInOneTitle;
+            document.getElementById("cloudBacktestingTitle").textContent = content[language].cloudBacktestingTitle;
+        }
+    </script>
 </head>
-<body>
+<body onload="changeLanguage()">
 
 <header class="main-header">
     <div class="container">
@@ -17,24 +107,30 @@
                 <li><a href="#support">Support</a></li>
                 <li><a href="#partners">Partners</a></li>
                 <li><a href="#hire">Hire Programmer</a></li>
-                <li><a href="https://www.mql5.com/it/users/francescolippo" class="cta">Get Started</a></li>
+                <li><a href="https://www.mql5.com/it/users/francescolippo" class="cta" id="getStarted">Get Started</a></li>
             </ul>
+            <select id="languageSelect" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="it">Italiano</option>
+                <option value="zh">中文</option>
+                <option value="es">Español</option>
+                <option value="de">Deutsch</option>
+            </select>
         </nav>
     </div>
 </header>
 
 <section id="hero">
     <div class="container">
-        <h2>Build your EA <span class="highlight">Without Coding!</span></h2>
-        <p>Generate any Expert Advisor for MetaTrader 4 & MetaTrader 5</p>
-        <p>EA Builder Pro is the ultimate tool for creating EA's without having to write a single line of code.</p>
-        <a href="https://www.mql5.com/it/users/francescolippo" class="cta">Get Started</a>
+        <h2 id="heroTitle">Build your EA <span class="highlight">Without Coding!</span></h2>
+        <p id="heroDesc1">Generate any Expert Advisor for MetaTrader 4 & MetaTrader 5</p>
+        <p id="heroDesc2">EA Builder Pro is the ultimate tool for creating EA's without having to write a single line of code.</p>
     </div>
 </section>
 
 <section id="statistics">
     <div class="container">
-        <h2>Statistics</h2>
+        <h2 id="statsTitle">Statistics</h2>
         <div class="stats">
             <div class="stat-item">
                 <h3>50,000+</h3>
@@ -59,19 +155,19 @@
 <section id="steps">
     <div class="container">
         <div class="step">
-            <h3><span class="step-number">1</span> Get Started: Templates</h3>
+            <h3 id="templatesTitle"><span class="step-number">1</span> Get Started: Templates</h3>
             <p>Quick-start your EA creation by selecting one of our templates and have a working EA immediately.</p>
         </div>
         <div class="step">
-            <h3><span class="step-number">2</span> Add your Indicators</h3>
+            <h3 id="indicatorsTitle"><span class="step-number">2</span> Add your Indicators</h3>
             <p>Add standard MetaTrader indicators or search for an indicator in our Web Library.</p>
         </div>
         <div class="step">
-            <h3><span class="step-number">3</span> Configure your Money Manager</h3>
+            <h3 id="moneyManagerTitle"><span class="step-number">3</span> Configure your Money Manager</h3>
             <p>Set up your risk management and money management settings to optimize your trading strategy.</p>
         </div>
         <div class="step">
-            <h3><span class="step-number">4</span> Strategy Modules</h3>
+            <h3 id="strategyModulesTitle"><span class="step-number">4</span> Strategy Modules</h3>
             <p>Use strategy modules to manage your open orders, Stop loss and Take Profit values.</p>
         </div>
     </div>
@@ -80,20 +176,16 @@
 <section id="features">
     <div class="container">
         <div class="feature">
-            <h3>No coding required</h3>
+            <h3 id="noCodingTitle">No coding required</h3>
             <p>You no longer need to write a single line of code or spend a lot of money on hiring a programmer.</p>
         </div>
         <div class="feature">
-            <h3>All-in-one Solution</h3>
+            <h3 id="allInOneTitle">All-in-one Solution</h3>
             <p>EA Builder Pro has all features to create almost any of your complex custom trading strategies.</p>
         </div>
         <div class="feature">
-            <h3>Cloud backtesting</h3>
+            <h3 id="cloudBacktestingTitle">Cloud backtesting</h3>
             <p>Backtest your strategies with a single click from the comfort of your sofa.</p>
-        </div>
-        <div class="feature">
-            <h3>Export to MetaTrader 4 & 5</h3>
-            <p>When you think you are ready to run your strategy, export your strategy for MT4 or MT5.</p>
         </div>
     </div>
 </section>
