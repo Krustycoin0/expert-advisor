@@ -7,15 +7,15 @@
 
 /* Stile generale del corpo */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    color: #343a40;
     display: flex;
 }
 
 /* Stile dell'intestazione */
 header {
-    background-color: #333;
+    background-color: #007bff;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -28,13 +28,14 @@ header {
 header h1 {
     margin: 0;
     font-size: 24px;
+    text-transform: uppercase;
 }
 
 /* Stile del menu laterale */
 nav {
-    background-color: #444;
+    background-color: #343a40;
     color: #fff;
-    width: 200px;
+    width: 220px;
     height: 100vh;
     padding-top: 80px; /* Spazio per l'header */
     position: fixed;
@@ -50,20 +51,21 @@ nav ul {
 }
 
 nav ul li {
-    padding: 10px;
+    padding: 15px;
     text-align: left;
-    border-bottom: 1px solid #575757;
+    border-bottom: 1px solid #495057;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #f8f9fa;
     text-decoration: none;
     display: block;
+    font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #575757;
+    background-color: #495057;
 }
 
 /* Stile del selettore di lingua */
@@ -72,19 +74,22 @@ nav select {
     padding: 10px;
     margin: 20px auto;
     font-size: 16px;
-    background-color: #333;
+    background-color: #007bff;
     color: #fff;
-    border: 1px solid #575757;
+    border: 1px solid #495057;
     display: block;
 }
 
 /* Stile principale */
 main {
-    margin-left: 200px; /* Spazio per il menu laterale */
-    padding: 100px 20px 20px 20px; /* Spazio per l'header */
+    margin-left: 220px; /* Spazio per il menu laterale */
+    padding: 100px 40px 40px 40px; /* Spazio per l'header */
     flex: 1;
     background-color: #fff;
     min-height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 40px;
 }
 
 /* Stile delle sezioni */
@@ -93,37 +98,36 @@ main section {
 }
 
 main section h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #444;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff;
 }
 
 main section p {
     font-size: 16px;
-    line-height: 1.5;
-    color: #555;
+    line-height: 1.6;
+    color: #495057;
 }
 
 /* Stile del footer */
 footer {
-    background-color: #333;
+    background-color: #343a40;
     color: #fff;
     padding: 10px;
     text-align: center;
     position: fixed;
-    width: calc(100% - 200px); /* Spazio per il menu laterale */
+    width: calc(100% - 220px); /* Spazio per il menu laterale */
     bottom: 0;
-    left: 200px;
+    left: 220px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Link nel footer */
 footer a {
-    color: #fff;
+    color: #007bff;
     text-decoration: underline;
 }
 
 footer a:hover {
-    color: #ccc;
+    color: #0056b3;
 }
-
-
