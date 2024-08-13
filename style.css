@@ -1,3 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-header {
+    background-color: #004080; /* Sfondo blu */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+.main-header .logo {
+    color: #fff; /* Testo bianco */
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff; /* Testo bianco */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a.cta {
+    background-color: #00c3ff;
+    color: #fff; /* Testo bianco */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+nav select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #00c3ff;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-left: 20px;
+}
+
 #hero {
     background: linear-gradient(135deg, #004080 0%, #0059b3 100%); /* Sfondo blu */
     color: #fff; /* Testo bianco */
@@ -21,7 +96,7 @@
 }
 
 #hero .cta {
-    background-color: #fff;
+    background-color: #00c3ff;
     color: #004080; /* Colore blu scuro per il bottone */
     padding: 10px 20px;
     border-radius: 5px;
@@ -33,7 +108,8 @@
 
 #statistics {
     padding: 50px 20px;
-    background-color: #fff;
+    background-color: #004080; /* Sfondo blu */
+    color: #fff; /* Testo bianco */
     text-align: center;
 }
 
@@ -49,10 +125,38 @@
 
 .stat-item h3 {
     font-size: 24px;
-    color: #004080; /* Colore blu scuro per i numeri */
+    color: #ffd700; /* Colore giallo per i numeri */
 }
 
 .stat-item p {
     font-size: 16px;
-    color: #666;
+    color: #fff;
+}
+
+#videos {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#videos h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
 }
