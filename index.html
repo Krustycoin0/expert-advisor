@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azienda di Sviluppo Expert Advisor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            width: 200px;
+            height: 100vh;
+            padding-top: 60px; /* Spazio per l'header */
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow: auto;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            padding: 10px;
+            text-align: left;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+        nav select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+        }
+        main {
+            margin-left: 200px; /* Spazio per il menu laterale */
+            padding: 80px 20px 20px 20px; /* Spazio per l'header */
+            flex: 1;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: calc(100% - 200px); /* Spazio per il menu laterale */
+            bottom: 0;
+            left: 200px;
+        }
+    </style>
+    <script>
+        function changeLanguage() {
+            var language = document.getElementById("languageSelect").value;
+            var content = {
+                "it": "Sviluppiamo, testiamo e vendiamo Expert Advisor dotati di intelligenza artificiale, in grado di generare profitti costanti sui mercati finanziari.",
+                "en": "We develop, test, and sell Expert Advisors equipped with artificial intelligence, capable of generating consistent profits in financial markets.",
+                "de": "Wir entwickeln, testen und verkaufen Expert Advisors mit künstlicher Intelligenz, die in der Lage sind, konstante Gewinne auf den Finanzmärkten zu erzielen.",
+                "es": "Desarrollamos, probamos y vendemos Expert Advisors equipados con inteligencia artificial, capaces de generar beneficios constantes en los mercados financieros.",
+                "zh": "我们开发、测试和销售配备人工智能的专家顾问，能够在金融市场上产生稳定的利润。"
+            };
+            document.getElementById("description").textContent = content[language];
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Azienda di Sviluppo Expert Advisor</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#chi-siamo">Chi Siamo</a></li>
+        <li><a href="#lo-sviluppo">Lo Sviluppo</a></li>
+        <li><a href="#dati">Dati</a></li>
+        <li><a href="#acquista">Acquista</a></li>
+    </ul>
+    <select id="languageSelect" onchange="changeLanguage()">
+        <option value="it">Italiano</option>
+        <option value="en">Inglese</option>
+        <option value="de">Tedesco</option>
+        <option value="es">Spagnolo</option>
+        <option value="zh">Cinese</option>
+    </select>
+</nav>
+
+<main>
+    <section id="chi-siamo">
+        <h2>Chi Siamo</h2>
+        <p id="description">Sviluppiamo, testiamo e vendiamo Expert Advisor dotati di intelligenza artificiale, in grado di generare profitti costanti sui mercati finanziari.</p>
+    </section>
+
+    <section id="lo-sviluppo">
+        <h2>Lo Sviluppo</h2>
+        <p>Utilizziamo le più recenti tecnologie di intelligenza artificiale per sviluppare sistemi di trading avanzati che possono essere automatizzati e ottimizzati per vari mercati finanziari.</p>
+    </section>
+
+    <section id="dati">
+        <h2>Dati</h2>
+        <p>I nostri Expert Advisor sono testati rigorosamente su dati storici e in ambienti di trading simulati per garantire la massima efficienza e affidabilità.</p>
+    </section>
+
+    <section id="acquista">
+        <h2>Acquista</h2>
+        <p>Puoi acquistare i nostri Expert Advisor visitando il nostro sito dedicato:</p>
+        <p><a href="https://www.mql5.com/it/users/francescolippo" target="_blank">Acquista qui</a></p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Il Tuo Nome o Nome Azienda. Tutti i diritti riservati.</p>
+</footer>
+
+</body>
+</html>
 
