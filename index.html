@@ -15,6 +15,11 @@
                     "heroDesc2": "We create the code, and you start earning without writing a single line.",
                     "getStarted": "Get Started",
                     "statsTitle": "Statistics",
+                    "users": "Users",
+                    "backtests": "Backtests",
+                    "expertAdvisors": "Expert Advisors",
+                    "videoTitle": "Presentation Videos",
+                    "previewTitle": "Project Preview",
                 },
                 "it": {
                     "heroTitle": "Costruiamo il tuo Expert dotato di intelligenza artificiale",
@@ -22,6 +27,11 @@
                     "heroDesc2": "Creiamo noi il tuo codice e tu senza dover scrivere una riga inizi a guadagnare.",
                     "getStarted": "Inizia Ora",
                     "statsTitle": "Statistiche",
+                    "users": "Utenti",
+                    "backtests": "Backtests",
+                    "expertAdvisors": "Expert Advisors",
+                    "videoTitle": "Video di Presentazione",
+                    "previewTitle": "Anteprima del Progetto",
                 },
                 "zh": {
                     "heroTitle": "我们构建您的AI驱动的专家顾问",
@@ -29,6 +39,11 @@
                     "heroDesc2": "我们创建代码，您无需编写任何代码即可开始赚钱。",
                     "getStarted": "开始",
                     "statsTitle": "统计数据",
+                    "users": "用户",
+                    "backtests": "回测",
+                    "expertAdvisors": "专家顾问",
+                    "videoTitle": "介绍视频",
+                    "previewTitle": "项目预览",
                 },
                 "es": {
                     "heroTitle": "Construimos tu Asesor Experto impulsado por IA",
@@ -36,6 +51,11 @@
                     "heroDesc2": "Creamos el código y tú comienzas a ganar sin escribir una sola línea.",
                     "getStarted": "Empezar",
                     "statsTitle": "Estadísticas",
+                    "users": "Usuarios",
+                    "backtests": "Pruebas retrospectivas",
+                    "expertAdvisors": "Asesores Expertos",
+                    "videoTitle": "Videos de Presentación",
+                    "previewTitle": "Vista Previa del Proyecto",
                 },
                 "de": {
                     "heroTitle": "Wir erstellen Ihren KI-gesteuerten Expert Advisor",
@@ -43,6 +63,11 @@
                     "heroDesc2": "Wir erstellen den Code, und Sie beginnen zu verdienen, ohne eine einzige Zeile zu schreiben.",
                     "getStarted": "Jetzt loslegen",
                     "statsTitle": "Statistiken",
+                    "users": "Benutzer",
+                    "backtests": "Backtests",
+                    "expertAdvisors": "Expert Advisors",
+                    "videoTitle": "Präsentationsvideos",
+                    "previewTitle": "Projektvorschau",
                 }
             };
 
@@ -51,6 +76,11 @@
             document.getElementById("heroDesc2").textContent = content[language].heroDesc2;
             document.getElementById("getStartedBtn").textContent = content[language].getStarted;
             document.getElementById("statsTitle").textContent = content[language].statsTitle;
+            document.getElementById("users").textContent = content[language].users;
+            document.getElementById("backtests").textContent = content[language].backtests;
+            document.getElementById("expertAdvisors").textContent = content[language].expertAdvisors;
+            document.getElementById("videoTitle").textContent = content[language].videoTitle;
+            document.getElementById("previewTitle").textContent = content[language].previewTitle;
         }
     </script>
 </head>
@@ -96,31 +126,30 @@
         <div class="stats">
             <div class="stat-item">
                 <h3>50,000+</h3>
-                <p>Utenti</p>
+                <p id="users">Utenti</p>
             </div>
             <div class="stat-item">
                 <h3>2m+</h3>
-                <p>Backtests</p>
+                <p id="backtests">Backtests</p>
             </div>
             <div class="stat-item">
                 <h3>160k+</h3>
-                <p>Expert Advisors</p>
+                <p id="expertAdvisors">Expert Advisors</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Aggiunto iframe per l'anteprima del sito indicato -->
 <section id="preview">
     <div class="container">
-        <h2>scambia Solana con Monkey EA prima che venga listato!</h2>
+        <h2 id="previewTitle">Scambia i Solana con Monkey EA prima che venga listato </h2>
         <iframe src="https://www.pink.meme/solana/token/FsweEc1a6addxVSebd1XVjB4nSpfspTVJU2q5HR6ice6" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
     </div>
 </section>
 
 <section id="videos">
     <div class="container">
-        <h2>Video di Presentazione</h2>
+        <h2 id="videoTitle">Video di Presentazione</h2>
         <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/UWnNB85vUpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/FjGW_FYNIU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -131,7 +160,7 @@
 <footer>
     <div class="container">
         <p>&copy; 2024 Monkey EA. All rights reserved.</p>
-    </div>
+            </div>
 </footer>
 
 </body>
